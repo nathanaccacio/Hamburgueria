@@ -1,0 +1,20 @@
+    {% extends 'base.html' %}
+
+    {% block content %}
+    <div class="container">
+        <i style="--bg:#00ff0a"></i>
+        <i style="--bg:#ff0057"></i>
+
+        <div class="cadastro">
+            <h1>✅CHECKOUT✅</h1>
+            <form>
+                <input type="text" name="nome" id="nome" placeholder="Nome">
+                <input type="text" name="endereco" id="endereco" placeholder="endereco">
+
+                <button type="submit">Enviar</button>
+            </form>    
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='css/formulario.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/form.css') }}">
+    {% endblock %}
